@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename="skeleton.css") }}">
+    {% block javascript %}{% endblock %}
+    <script type="text/javascript" src="{{ url_for('static', filename="socket.io.dev.js") }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename="main.css") }}">
+    <title>Flack</title>
+  </head>
+  <body>
+    <h3>Flack</h3>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>

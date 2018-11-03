@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ url_for('static', filename="register.js") }}"></script>
+{% endblock %}
+{% block body %}
+
+<form action="{{ url_for('register') }}" method="post" id="user-form">
+  <input type="text" name="displayname" id="displayname" placeholder="Enter Display Name">
+  <input type="submit">
+</form>
+
+{% endblock %}

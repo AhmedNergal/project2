@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block javascript %}
+<script type="text/javascript" src="{{ url_for('static', filename="index.js") }}"></script>
+{% endblock %}
+{% block body %}
+<!-- just use a number and class 'column' or 'columns' -->
+<div class="row upper">
+  <div id="channels" class="four columns">
+  </div>
+  <div class="eight columns" id="chat-box"></div>
+</div>
+<div class="row" id="bottom">
+  <div class="four columns"">
+      <input type="text" name="channel-name" placeholder="channel-name" id="channel-name">
+      <button id="channel-submit">Add Channel</button>
+  </div>
+  <div class="eight columns">
+      <input type="text" name="message-text" placeholder="Enter a message..." id="message-text">
+      <button id="message-submit">Send Message</button>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+#bottom {
+  position: absolute;
+  Width: 98%;
+  bottom: 5rem;
+  height: 1rem;
+  margin-top: 1rem;
+}
+
+#message-text {
+  width: 77%;
+  margin-right: 2rem;
+}
+
+#channel-name {
+  width: 55%;
+  margin-right: 2rem;
+}
+
+.channel {
+  padding: 0.4rem;
+  padding-left: 20px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-bottom: 1px;
+}
+
+.selected-channel {
+  padding: 0.25rem;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-bottom: 1px;
+  background-color: gray;
+}
+
+#channels {
+  overflow-y: auto;
+  height: 52.5rem;
+  border: 3px red solid;
+}
+
+#chat-box {
+  overflow-y: auto;
+  height: 52.5rem;
+  border: 3px red solid;
+}
+
+.message {
+  width: 100%;
+  background-color: blue;
+  color: white;
+}
+
+.displayname {
+  font-weight: bold;
+}
+
+.messageText {
+  text-decoration: line-through;
+}
+
+.timestamp {
+  text-align: right;
+  font-style: italic;
+}
