@@ -3,20 +3,34 @@
 <script type="text/javascript" src="{{ url_for('static', filename="index.js") }}"></script>
 {% endblock %}
 {% block body %}
-<!-- just use a number and class 'column' or 'columns' -->
-<div class="row upper">
-  <div id="channels" class="four columns">
+<div class="row">
+  <div class="col-3">
+    <h4>Flack</h4>
+    <div id="channels"></div>
+    <div class="input-group bottom">
+      <input class="form-control" type="text" name="channel-name" placeholder="channel-name" id="channel-name">
+      <div class="input-group-append">
+        <button id="channel-submit" class="btn btn-primary" id="channel-btn"><i class="fas fa-plus-square"></i> Channel</button>
+      </div>
+    </div>
   </div>
-  <div class="eight columns" id="chat-box"></div>
-</div>
-<div class="row" id="bottom">
-  <div class="four columns"">
-      <input type="text" name="channel-name" placeholder="channel-name" id="channel-name">
-      <button id="channel-submit">Add Channel</button>
+  <div class="col-6 white">
+    <h4 id="channel-desc">#<span id="channel_name_header"></span></h4>
+    <div id="chat-box"></div>
+
+    <div class="input-group bottom">
+      <textarea class="form-control" name="message" rows="2" cols="5" id="message-text"></textarea>
+      <div class="input-group-append">
+        <button class="btn btn-primary" id="message-submit">Send Message <i class="far fa-paper-plane"></i></button>
+      </div>
+    </div>
   </div>
-  <div class="eight columns">
-      <input type="text" name="message-text" placeholder="Enter a message..." id="message-text">
-      <button id="message-submit">Send Message</button>
-  </div>
+  <div class="col-2 white">
+    <button class="btn btn-primary" id="file-getter"><h5>Uploaded Files</h5></button>
+    <div id="file-box"></div>
+    <div class="file-submit">
+      <input type="file" name="file-input" id="file-input">
+      <button class="btn btn-primary" id="file-submit">Upload File <i class="fas fa-file-upload"></i></button>
+    </div>
 </div>
 {% endblock %}

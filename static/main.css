@@ -1,64 +1,148 @@
-#bottom {
-  position: absolute;
-  Width: 98%;
-  bottom: 5rem;
-  height: 1rem;
-  margin-top: 1rem;
+html {
+  min-height: 100%;
+  position: relative;
 }
 
-#message-text {
-  width: 77%;
-  margin-right: 2rem;
+.row {
+  height: 100vh;
+}
+
+body {
+  /*background-color: #38A1F3;*/
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+h4 {
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 #channel-name {
-  width: 55%;
-  margin-right: 2rem;
+  margin-left: 0.95rem;
+  width: 10%;
+  margin-bottom: 0.25rem;
 }
 
 .channel {
+  background-color: #38A1F3;
   padding: 0.4rem;
   padding-left: 20px;
-  border: 1px solid gray;
-  border-radius: 3px;
-  margin-bottom: 1px;
+  color: white
 }
 
 .selected-channel {
-  padding: 0.25rem;
-  border: 1px solid gray;
-  border-radius: 3px;
-  margin-bottom: 1px;
-  background-color: gray;
+  background-color: #2b7cbc;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  width: 100%;
+  margin: 0;
 }
 
 #channels {
   overflow-y: auto;
-  height: 52.5rem;
-  border: 3px red solid;
+  height: 30rem;
+  padding: 0;
+  width: 100%;
 }
 
 #chat-box {
   overflow-y: auto;
-  height: 52.5rem;
-  border: 3px red solid;
+  height: 30rem;
+  padding: 1.5rem;
+  margin-left: 0.5rem;
 }
 
+
 .message {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.1rem;
   width: 100%;
-  background-color: blue;
-  color: white;
+  color: black;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .displayname {
   font-weight: bold;
-}
-
-.messageText {
-  text-decoration: line-through;
+  font-size: 1.2rem;
 }
 
 .timestamp {
   text-align: right;
   font-style: italic;
+  font-size: 0.8rem;
+}
+
+#file-box {
+  width: 100%;
+  height: 30rem;
+  overflow-y: auto;
+}
+
+.col-3 {
+  background-color: #38A1F3;
+  padding: 0.15rem;
+  margin-left: 0.95rem;
+  margin-right: 0;
+}
+
+#channel-submit {
+  background-color: #005aa0;
+
+}
+
+.col-3 h4 {
+  color: white;
+}
+
+.col-6 {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.col-2 {
+  color: black;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+#message-text {
+  margin-left: 0.75rem;
+}
+
+.input-group {
+  margin-top: 1rem;
+}
+
+#message-submit {
+  background-color: #005aa0;
+}
+
+#file-submit {
+  margin-top: 1.25rem;
+  margin-left: 3rem;
+  background-color: #005aa0;
+}
+
+#file-getter {
+  margin-top: 1.25rem;
+}
+
+#file-getter h5 {
+  font-weight: bold;
+}
+
+#file-box {
+  margin-bottom: 1rem;
 }
